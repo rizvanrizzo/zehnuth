@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-gold-start: #fbbf24; /* amber-400 */
+  --color-gold-end: #d97706;   /* amber-600 */
+  --shadow-premium: 0px 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+@layer base {
+  body {
+    @apply bg-[#F8FAFC] text-slate-800 font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .gold-gradient-text {
+    background: linear-gradient(to right, var(--color-gold-start), var(--color-gold-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-gradient-bg {
+    background: linear-gradient(to bottom right, var(--color-gold-start), var(--color-gold-end));
+  }
+
+  .premium-card {
+    @apply bg-white rounded-[32px] shadow-premium border border-slate-50;
+  }
+}
