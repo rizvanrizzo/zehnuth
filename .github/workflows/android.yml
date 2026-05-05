@@ -31,6 +31,10 @@ jobs:
         working-directory: ./flutter_app
         run: flutter pub get
 
+      - name: Generate files
+        working-directory: ./flutter_app
+        run: flutter pub run build_runner build --delete-conflicting-outputs
+
       - name: Build APK (Debug)
         working-directory: ./flutter_app
         run: flutter build apk --debug

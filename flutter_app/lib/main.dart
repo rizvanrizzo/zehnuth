@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'presentation/screens/main_navigation.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class ZehnuthApp extends StatelessWidget {
       title: 'ZEHNUTH',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'Inter',
+        textTheme: GoogleFonts.interTextTheme(),
         scaffoldBackgroundColor: const Color(0xFFF8FAFC),
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.amber,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lucide_icons/lucide_icons.dart';
 import 'leaderboard_screen.dart';
 import 'submit_point_screen.dart';
 import 'history_screen.dart';
@@ -48,10 +49,10 @@ class _MainNavigationState extends State<MainNavigation> {
           selectedLabelStyle: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
           unselectedLabelStyle: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.leaderboard), label: "LEADERBOARD"),
-            BottomNavigationBarItem(icon: Icon(Icons.add_circle), label: "SUBMIT"),
-            BottomNavigationBarItem(icon: Icon(Icons.history), label: "HISTORY"),
-            BottomNavigationBarItem(icon: Icon(Icons.people), label: "MENTEES"),
+            BottomNavigationBarItem(icon: Icon(LucideIcons.trophy), label: "LEADERBOARD"),
+            BottomNavigationBarItem(icon: Icon(LucideIcons.plusCircle), label: "SUBMIT"),
+            BottomNavigationBarItem(icon: Icon(LucideIcons.history), label: "HISTORY"),
+            BottomNavigationBarItem(icon: Icon(LucideIcons.users), label: "MENTEES"),
           ],
         ),
       ),
